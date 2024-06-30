@@ -3,8 +3,7 @@ import re
 
 # Define the IP address to ping.
 # You can change this to any IP address you want to test.
-# IP = input("Enter IP: ")
-IP = "8.8.8.8"
+IP = input("Enter IP: ")
 
 # Regular expression pattern to capture the TTL value from the ping output.
 pattern = r"TTL=(\d+)"
