@@ -3,9 +3,7 @@
 This script uses the TTL (Time to Live) value from a ping response to infer the operating system or device type of the target IP address. It's a simple yet effective way to gain insights into the remote system.
 
 ## Usage
-
-1. Replace the `IP` variable in `detect_os_by_ttl.py` with the target IP address you want to check.
-2. Run the script. It will execute a ping command and analyze the TTL value in the response to determine the OS or device type.
+1. Run the script. It will ask for IP and it will execute a ping command and analyze the TTL value in the response to determine the OS or device type.
 
 ## Supported TTL Values
 
