@@ -35,11 +35,33 @@ try:
             print("IP belongs to a Cisco device")
         elif ttl_value == 254:
             print("Running OS: Solaris/AIX")
+        elif ttl_value == 252:
+            print("Running OS: Windows Server 2003/XP")
+        elif ttl_value == 240:
+            print("Running OS: Novell")
+        elif ttl_value == 200:
+            print("Running OS: HP-UX")
+        elif ttl_value == 190:
+            print("Running OS: MacOS")
+        elif ttl_value == 127:
+            print("Running OS: MacOS")
+        elif ttl_value == 100:
+            print("Running OS: IBM OS/2")
+        elif ttl_value == 60:
+            print("Running OS: AIX")
+        elif ttl_value == 50:
+            print("Running OS: Windows 95/98/ME")
+        elif ttl_value == 48:
+            print("Running OS: BSDI")
+        elif ttl_value == 30:
+            print("Running OS: SunOS")
         else:
-            print("TTL value is not recognized, further analysis required")
+            print("Unknown OS or device")
     else:
         # If the TTL value is not found in the output, inform the user.
         print("Cannot detect OS, TTL value not found")
 except subprocess.CalledProcessError as e:
     # Handle errors from the ping command.
     print(f"Ping failed: {e}")
+
+input("Press Any Key To Exit")
