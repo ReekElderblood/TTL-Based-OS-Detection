@@ -11,6 +11,16 @@ This script uses the TTL (Time to Live) value from a ping response to infer the 
 - **Linux/FreeBSD/OSX/Juniper/HP-UX**: TTL = 64
 - **Cisco Devices**: TTL = 255
 - **Solaris/AIX**: TTL = 254
+- **Windows Server 2003/XP**: TTL = 252
+- **Novell**: TTL = 240
+- **HP-UX**: TTL = 200
+- **MacOS**: TTL = 190
+- **MacOS (Alternate)**: TTL = 127
+- **IBM OS/2**: TTL = 100
+- **AIX**: TTL = 60
+- **Windows 95/98/ME**: TTL = 50
+- **BSDI**: TTL = 48
+- **SunOS**: TTL = 30
 
 ## Example
 
